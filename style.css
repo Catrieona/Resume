@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+height: 100%;
+}
+main {
+    width: 1300px;
+    margin: 0 auto;
+    border: 2px solid black;
+    display: flex;
+   
+}
+
+.personalInformBlock {
+    background-color: #08546c;
+    width: 40%;
+}
+
+
+
+.shemeBlock {
+    width: 65%;
+}
+
+.portret {
+    width: 300px;
+    height: 300px;
+    margin: 7% auto;
+    display: block;
+}
+
+.line {
+    border-bottom: 2px solid white;
+    color: white;
+    width: 70%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.language_bar {
+    width: 50%;
+    margin: 30px auto;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.language_text {
+    width: 15%;
+    color: white;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.personalTitle {
+    margin: 70px auto;
+    text-align: center;
+    font-size: 34px;
+}
+
+
+.HobbiesImg {
+    display: flex;
+}
+
+.bycikle, .camera, .film {
+    
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    margin: 20px auto;
+}
+.bycikle {
+    background-image: url("img/bycikle.png");
+    }
+.camera {
+    background-image: url("img/camera.png")
+}
+.film {
+    background-image: url("img/film.png")
+}
+
+.FirsInformBlock {
+    position: relative;
+}
+
+.sheme {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 100px;
+}
+.sheme::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 3px);
+    width: 600px;
+    border: 3px solid #0b1829;
+}
+
+.sheme-circle {
+   
+    border-radius: 50%;
+    
+    background: rgb(11,24,41);
+    background: radial-gradient(circle,
+    #0b1829 0%,
+    #0b1829 24.99%,
+    #5b9098 25%,
+    #58919c 34.99%,
+    #81aeab 35%,
+    #81aea7 49.99%,
+    #cadfd6 50%,
+    #ccd9d0 75%);    
+    width: 100px;
+    height: 100px;
+    
+}
+.sheme-circle:nth-of-type(2) {
+    width: 60px;
+    height: 60px;
+}
+.sheme-circle:nth-of-type(3) {
+    width: 120px;
+    height: 120px;
+}
+.sheme-circle:nth-of-type(4) {
+    width: 80px;
+    height: 80px;
+}
+
+.Title {
+    color: #0b1829;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+}
+
+.shemeText {
+    width: 185px;
+    font-size: 12px;
+    
+
+}
+
+.shemeTitle {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.shemeInform1 {
+   position: absolute;
+   left: 133px;
+   top: 63px;
+   text-align: center;
+
+}
+
+.shemeInform2 {
+    position: absolute;
+    left:  460px;
+    top: 63px;
+    text-align: center;
+ 
+ }
+
+ .shemeInform3 {
+    position: absolute;
+    left: 50px;
+    top: 288px;
+ }
+
+ .shemeInform4 {
+    position: absolute;
+    left: 323px;
+    top: 288px;
+    text-align: center;
+ 
+ }
+
+ .shemeInform5 {
+    position: absolute;
+    left: 585px;
+    top: 288px;
+    text-align: right;
+ 
+ }
+
+ .skillsBlock {
+     position: relative;
+ }
+
+ .skillsBlock .Title {
+     margin-top: 200px;
+     margin-bottom: 100px;
+ }
+
+
+.skills {
+    margin: 30px auto;
+    transform-origin: center;
+    position: relative;
+    transform: rotate(-45deg);
+    width: 300px; 
+    height: 300px;
+    border: 100px solid #95CD8B;
+    border-right: 100px solid #D0E6BB;
+    border-bottom: 100px solid  rgb(216, 176, 66);
+    border-radius: 100%;
+    
+}
+
+.skills::after {
+    content: "";
+    width: 300px; 
+    height: 300px;
+    transform: rotate(60deg) translate(-100px, -100px);
+    transform-origin: 150px 150px;
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    border: 100px solid transparent;
+    border-right: 100px solid #D0E6BB;
+}
+
+
+.skills::before {
+    content: "";
+    width: 300px; 
+    height: 300px;
+    transform: rotate(156deg) translate(-100px, -100px);
+    transform-origin: 150px 150px;
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    border: 100px solid transparent;
+    border-right: 100px solid rgb(216, 176, 66);
+}
+
+.skills_text1 {
+position: absolute;
+top: 100px;
+left: 50px;
+font-size: 30px;
+color: #0b1829;
+font-weight: bold;
+}
+
+.skills_text2 {
+position: absolute;
+top: 140px;
+left: 600px;
+font-size: 30px;
+color: #0b1829;
+font-weight: bold;
+}
+
+.skills_text3 {
+    position: absolute;
+    top: 600px;
+    left: 50px;
+    font-size: 30px;
+    color: #0b1829;
+    font-weight: bold;  
+}
+
+.SecondInformBlock .Title {
+    margin-top: 80px;
+    
+}
+
+.CompanyTitle {
+    color: #0b1829;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.company_inform_one {
+    display: flex;
+    justify-content: center;
+  
+}
+.company_inform_two {
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.company_inform_one div{
+    width: 25%;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.company_inform_two div{
+    width: 25%;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.arrowShemeBlock {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px auto;
+
+}
+
+.arrow {
+    background-color: #0b1829;
+    width: 20%;
+    height: 60px;
+    position: relative;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.arrow:nth-of-type(2) {
+    background-color: #588f96;
+}
+
+.arrow:nth-of-type(2)::before {
+    border-left: 30px solid #0b1829;
+}
+
+.arrow:nth-of-type(3) {
+    background-color: #7fadaa;
+}
+
+.arrow:nth-of-type(3)::before {
+    border-left: 30px solid #588f96;
+}
+
+.arrow:nth-of-type(4) {
+    background-color: #ccd9cf;
+}
+
+.arrow:nth-of-type(4)::before {
+    border-left: 30px solid #7fadaa;
+}
+
+.arrow:nth-of-type(5) {
+    background-color: #f9daac;
+}
+
+.arrow:nth-of-type(5)::before {
+    border-left: 30px solid #ccd9cf;
+}
+.arrow:nth-of-type(5)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    width:0;
+    height: 0;
+    border: 30px solid transparent;
+    border-left: 30px solid #f9daac;
+}
+
+.arrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:0;
+    height: 0;
+    border: 30px solid transparent;
+    border-left: 30px solid #fff;
+    
+}
